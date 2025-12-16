@@ -11,7 +11,9 @@ import javax.swing.WindowConstants;
 
 public class Apuesta extends javax.swing.JFrame {
 
-   
+    /*
+    * Esto es un constructor del programa
+    */
     public Apuesta() 
     {
         initComponents();
@@ -120,7 +122,9 @@ public class Apuesta extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /*
+    * Esto sirve para crear la ventana que se genera para agregar un partido nuevo
+    */
     private void bNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNuevoActionPerformed
         crearPartido agregarpartido = new crearPartido(this);
         agregarpartido.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -140,7 +144,9 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modelovacio);
     }//GEN-LAST:event_bResetearActionPerformed
 
-   
+    /**
+    * @serialData Genera 2 numeros aleatorios para los partidos en la quiniela
+    */   
     public int cualquiera(int n1, int n2)
     {
         return (int)Math.floor((Math.random()*(n2-n1+1) + n1));
@@ -172,6 +178,9 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modeloquinielaresuelta);
     }//GEN-LAST:event_bRealizarActionPerformed
 
+    /**
+    * @serialData Agrega el partido que se escriba en la ventana flotante
+    */
     
     public void partidoNuevo(String partido)
     {
@@ -186,7 +195,9 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaQuiniela.setModel(modelonuevo);
     }
     
-  
+    /**
+    * @serialData Elimina el partido que se seleccione en el apartado partidos de la ventana
+    */
     public void borrarPartido(int indice)
     {
         DefaultListModel modelonuevoquiniela = new DefaultListModel();

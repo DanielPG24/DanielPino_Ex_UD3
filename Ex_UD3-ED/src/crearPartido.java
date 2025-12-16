@@ -1,15 +1,10 @@
 
 import java.awt.event.KeyEvent;
 
-/**
-*
-*@author dpingom1604
-* 
-*/
 
 public class crearPartido extends javax.swing.JFrame
 {
-   
+
     
     private Apuesta v;
     
