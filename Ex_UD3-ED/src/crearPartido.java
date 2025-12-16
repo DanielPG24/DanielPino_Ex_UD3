@@ -1,7 +1,11 @@
 
 import java.awt.event.KeyEvent;
 
-
+/**
+*
+*@author dpingom1604
+* 
+*/
 
 public class crearPartido extends javax.swing.JFrame
 {
@@ -72,7 +76,7 @@ public class crearPartido extends javax.swing.JFrame
 
     public void añadePartido(String p)
     {
-        v.agregarPartido(p);
+        v.partidoNuevo(p);
         tPartido.setText("");
         tPartido.requestFocus();
     }
