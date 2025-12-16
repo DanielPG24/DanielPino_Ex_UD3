@@ -8,13 +8,17 @@ public class crearPartido extends javax.swing.JFrame
     
     private Apuesta v;
     
-   
+   /*
+    * Esto es un constructor
+    */
     public crearPartido() 
     {
         initComponents();
     }
 
-   
+    /**
+    * @serialData Hace que el partido creado se genere en el apartado partidos de la ventana Apuestas
+    */   
     public crearPartido(Apuesta ventana) 
     {
         initComponents();
@@ -68,7 +72,9 @@ public class crearPartido extends javax.swing.JFrame
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+    * @serialData Recoge de Apuestas el generador de la ventana "Agregar partido nuevo"
+    */
     public void añadePartido(String p)
     {
         v.partidoNuevo(p);
